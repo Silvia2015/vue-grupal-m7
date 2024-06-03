@@ -9,6 +9,31 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
+    {
+      path: '/login',
+      name: 'login',
+      component:() => import ('../views/LoginView.vue')
+
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: () => import('../views/admin/AdminLayout.vue'),
+      children: [
+        {
+          path:'admin-productos',
+          name: 'admin-productos',
+          component: () => import('../views/admin/AdminView.vue')
+        },
+        {
+          path: 'nuevo',
+          name: 'nuevo-producto',
+          component: () => import('../views/admin/NewProductView.vue')
+        }
+      ]
+    }
+  
+
   
   ]
 })

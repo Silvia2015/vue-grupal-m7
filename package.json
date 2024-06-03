@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "firebase": "^10.12.2",
     "vee-validate": "^4.13.0",
     "vue": "^3.4.21",
