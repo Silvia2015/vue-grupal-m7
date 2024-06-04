@@ -23,7 +23,7 @@ export default createStore({
         login({commit},{email,password,router}) {
          signInWithEmailAndPassword(auth,email,password).then(userCredential => {
             commit('setAuthUser',userCredential.user);
-            // router.push({name:'home'})
+             router.push({name:'admin-productos'})
          })
          .catch(error => {
            // console.log(error);
