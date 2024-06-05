@@ -1,11 +1,10 @@
 <script setup>
+import Navbar from '@/components/Nabvar.vue';
 </script>
 
 <template>
-<dir class="container">
+  <Navbar/>
+  <div class="container">
     <RouterView/>
-</dir>
-
+  </div>
 </template>
-
-<script></script>

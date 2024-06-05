@@ -16,8 +16,8 @@ export default function useImage() {
     console.log('Select file:', data);
 
     if (data) {
-      const fileExtension = data.name.split('.').pop(); 
-      storageRefPath = storageRef(storage, `/productos/${uid()}.${fileExtension}`); 
+      const fileExtension = data.name.split('.').pop(); // Obtiene la extensión del archivo
+      storageRefPath = storageRef(storage, `/productos/${uid()}.${fileExtension}`);  
       console.log(storageRefPath);
 
       const {
