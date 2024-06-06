@@ -2,6 +2,8 @@
 <script setup>
  import Navbar from '@/components/Nabvar.vue';
  import Product from '@/components/Product.vue';
+
+
 </script>
 
 <template>
@@ -10,7 +12,7 @@
     <h1 class="text-center">Nuestros Productos</h1>
     <Product/>
    
-  
+  <Products/>
   <input v-model="searchQuery" class="mt-5 form-control" placeholder="Buscar Productos" />
  
 
