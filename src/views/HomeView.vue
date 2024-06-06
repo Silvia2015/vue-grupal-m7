@@ -13,7 +13,7 @@
     <Product/>
    
   <Products/>
-  <input v-model="searchQuery" class="mt-5 form-control" placeholder="Buscar Productos" />
+ 
  
 
  
